@@ -15,17 +15,16 @@ assessmentButton.addEventListener(
     console.log(assessment(userName));
     resultDivision.innerText = '';
     
-  
-
-    const heading=document.createElement('div');
+    const headerDivision = document.createElement('div');
     headerDivision.setAttribute('class', 'card-header text-bg-primary');
     headDivision.innerText = '診断結果';
+    
     const bodyDivision = document.createElement('div')
     bodyDivision.setAttribute('class','card-body');
 
-    const paragraph=document.createElement('p');
+    const paragraph = document.createElement('p');
     paragraph.setAttribute('class','card-text');
-    const result =assessmentuserName);
+    const result =assessment(userName);
     paragraph.innerText=result;
     bodyDivision.appendChild(paragraph);
 
