@@ -17,9 +17,24 @@ assessmentButton.addEventListener(
     
   
 
-    const heading=document.createElement('h3');
-    heading.innerText = '診断結果';
-    resultDivision.appendChild(heading);
+    const heading=document.createElement('div');
+    headerDivision.setAttribute('class', 'card-header text-bg-primary');
+    headDivision.innerText = '診断結果';
+    const bodyDivision = document.createElement('div')
+    bodyDivision.setAttribute('class','card-body');
+
+    const paragraph=document.createElement('p');
+    paragraph.setAttribute('class','card-text');
+    const result =assessmentuserName);
+    paragraph.innerText=result;
+    bodyDivision.appendChild(paragraph);
+
+
+    resultDivision.setAttribute('class','card');
+
+    resultDivision.appendChild(headerDivision);
+    resultDivision.appendChild(bodyDivision);
+    
 
     const paragraph = document.createElement('p');
     const result = assessment(userName);
