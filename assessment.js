@@ -13,6 +13,7 @@ assessmentButton.addEventListener(
     return;//関数の処理を終了する。
   }
     console.log(assessment(userName));
+    
     resultDivision.innerText = '';
     
     const headerDivision = document.createElement('div');
