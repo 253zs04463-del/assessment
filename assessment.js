@@ -35,10 +35,6 @@ assessmentButton.addEventListener(
     resultDivision.appendChild(bodyDivision);
     
 
-    const paragraph = document.createElement('p');
-    const result = assessment(userName);
-    paragraph.innerText = result;
-    resultDivision.appendChild(paragraph);
     //X投稿ボタンの作成
     tweetDivision.innerText = '';
     const anchor = document.createElement('a');
